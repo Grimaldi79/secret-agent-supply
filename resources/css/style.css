@@ -1,0 +1,45 @@
+
+body{
+  font-size: 18px;
+  font-family: Helvetica;
+  color: white;
+
+}
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  background-color: Black;
+  height: 2.23rem;
+}
+.logo img{
+  height: 1.5rem;
+  padding-left: 0.5rem;
+}
+.logo span{
+  font-size: 1rem;
+  padding: 0.66rem 1rem;
+}
+.main-banner{
+  display: flex;
+  background-image: url(../images/moto.jpeg);
+  background-size: cover;
+  height: 25rem;
+}
+
+.new-arrival{
+  background-color: black;
+  width: 20rem;
+  height: auto;
+  margin-top: 9rem;
+}
+.new-arrival h1,h3{
+  font-weight: bold;
+}
+.Store span{
+  background-color: black;
+
+}
