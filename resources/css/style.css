@@ -16,6 +16,7 @@ div{
 .logo{
   background-color: Black;
   height: 2.23rem;
+  width: 100%;
 }
 .logo img{
   height: 1.5rem;
@@ -32,6 +33,8 @@ div{
   display: flex;
   background-image: url(../images/moto.jpeg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 25rem;
 }
 
@@ -69,9 +72,6 @@ nav a{
   color: white;
 }
   /*-- store--*/
-.store{
-
-}
 
 .products{
   display:flex;
@@ -91,7 +91,6 @@ nav a{
 
 }
 .item span{
-  display: block;
   background-color: black;
   padding: 0.5rem 1rem;
   width: 90%;
@@ -99,7 +98,6 @@ nav a{
   color: white;
 }
 .item img{
-  width: auto;
   height: 9rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -116,7 +114,7 @@ nav a{
 }
 
 .title span{
-  display: block;
+  display: flex;
   background-color: black;
   color: white;
   padding: 1rem 2rem;
@@ -136,3 +134,22 @@ footer{
   background-color: black;
   height: 5rem;
 }
+
+  /*-- tablet --*/
+  @media only screen and (max-width: 768px){
+    .item{
+      width: 47%;
+    }
+    .container{
+      width: 100%;
+    }
+    .products{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .brick-mor{
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
