@@ -11,6 +11,8 @@ div{
   width: 960px;
   margin: 0 auto;
 }
+
+  /*-- logo--*/
 .logo{
   background-color: Black;
   height: 2.23rem;
@@ -22,7 +24,10 @@ div{
 .logo span{
   font-size: 1rem;
   padding-left: 1rem;
+  color: white;
 }
+
+  /*-- banner--*/
 .main-banner{
   display: flex;
   background-image: url(../images/moto.jpeg);
@@ -49,6 +54,8 @@ div{
   font-size: 1rem;
   padding-bottom: 0.25rem;
 }
+
+  /*-- nav--*/
 .nav{
   background-color: firebrick;
   padding: 0.75rem 0;
@@ -61,6 +68,7 @@ nav{
 nav a{
   color: white;
 }
+  /*-- store--*/
 .store{
 
 }
@@ -68,6 +76,7 @@ nav a{
 .products{
   display:flex;
   justify-content: space-between;
+  align-items: baseline;
   margin-bottom: 3rem;
 }
 .item {
@@ -90,26 +99,40 @@ nav a{
   color: white;
 }
 .item img{
-  width: 9rem;
+  width: auto;
   height: 9rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-.store-info{
+.brick-mor{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.store-info{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
 }
 
 .title span{
   display: block;
-  text-align: center;
   background-color: black;
   color: white;
-  width: 35%;
+  padding: 1rem 2rem;
 }
- .hours, span{
+ .hours span{
+  color: black;
+
+}
+.location span{
   color: black;
 }
-.location, span{
-  color: black;
+
+  /*-- footer --*/
+footer{
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 5rem;
 }
