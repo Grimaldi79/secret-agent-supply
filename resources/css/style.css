@@ -59,49 +59,79 @@ div{
 }
 
   /*-- nav--*/
-.nav{
+.nav-back{
   background-color: firebrick;
   padding: 0.75rem 0;
 }
 nav{
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
 }
 nav a{
   color: white;
 }
+a{
+  text-decoration: none;
+}
+.drop-btn {
+    background-color: firebrick;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.drop-down{
+
+    position: relative;
+    display: inline-block;
+}
+.drop-links {
+  display: none;
+    position: absolute;
+    background-color: firebrick;
+    min-width: 160px;
+    z-index: 1;
+  }
+  .drop-links a{
+    text-align: center;
+    padding: 0.6rem 0.8rem;
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+  .drop-down:hover .drop-links{
+    display: block;
+  }
   /*-- store--*/
 
 .products{
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 .item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 4px solid black;
-  width: 30%;
-  height: 30%;
-  margin-top: 3rem;
+  width: 30%
 
 }
-.item span{
+.item-discript{
   background-color: black;
   padding: 0.5rem 1rem;
-  width: 90%;
   text-align: center;
   color: white;
 }
+.item-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid black;
+}
 .item img{
   height: 9rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
+
 .brick-mor{
   display: flex;
   justify-content: space-between;
@@ -136,20 +166,61 @@ footer{
 }
 
   /*-- tablet --*/
+  @media only screen and (min-width: 768px) {
+    .drop-down{
+      display: none;
+    }
+  }
   @media only screen and (max-width: 768px){
     .item{
       width: 47%;
     }
-    .container{
-      width: 100%;
+    .full-nav{
+      display: none;
     }
     .products{
+
+      /* flex-direction: column;
+      justify-content: center;
+      align-items: center;*/
+    }
+    .brick-mor{/*
       flex-direction: column;
+      justify-content: center;*/
+    }
+
+  }
+
+  @media only screen and (max-width: 768px) (hover: hover){
+    .nav{
+      display: flex;
       justify-content: center;
       align-items: center;
-    }
-    .brick-mor{
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
+     }
+      .drop-btn {
+        display: block;
+        font-size: 1rem;
+          background-color: firebrick;
+          color: white;
+          border: none;
+          cursor: pointer;
+      }
+
+      .drop-links {
+        display: none;
+          position: absolute;
+          background-color: firebrick;
+          min-width: 160px;
+          z-index: 1;
+        }
+        .drop-links a{
+          text-align: center;
+          padding: 0.6rem 0.8rem;
+          display: block;
+          color: white;
+          text-decoration: none;
+        }
+        .drop-down:hover .drop-links{
+          display: block;
+        }
+      }
