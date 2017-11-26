@@ -1,5 +1,5 @@
 
-body{
+html{
   font-size: 18px;
   font-family: Helvetica;
   color: white;
@@ -15,8 +15,13 @@ div{
   /*-- logo--*/
 .logo{
   background-color: Black;
-  height: 2.23rem;
   width: 100%;
+}
+.site-id{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.66rem 0;
 }
 .logo img{
   height: 1.5rem;
@@ -37,7 +42,6 @@ div{
   background-position: center;
   height: 25rem;
 }
-
 .new-arrival{
   background-color: black;
   width: 20rem;
@@ -75,38 +79,38 @@ a{
   text-decoration: none;
 }
 .drop-btn {
-    background-color: firebrick;
-    color: white;
-    border: none;
-    cursor: pointer;
+  background-color: firebrick;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 .drop-down{
-
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 .drop-links {
   display: none;
-    position: absolute;
-    background-color: firebrick;
-    min-width: 160px;
-    z-index: 1;
-  }
-  .drop-links a{
-    text-align: center;
-    padding: 0.6rem 0.8rem;
-    display: block;
-    color: white;
-    text-decoration: none;
-  }
-  .drop-down:hover .drop-links{
-    display: block;
+  position: absolute;
+  background-color: firebrick;
+  min-width: 160px;
+  z-index: 1;
+}
+.drop-links a{
+  text-align: center;
+  padding: 0.6rem 0.8rem;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+.drop-down:hover .drop-links{
+  display: block;
   }
   /*-- store--*/
 
 .products{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 3rem 0;
 }
 .item {
@@ -185,11 +189,14 @@ footer{
       /*flex-direction: column;*/
       flex-wrap: wrap;
       justify-content: space-between;
-      align-self: center;
     }
+
     .item{
       width: 47%;
       margin-bottom: 2rem;
+    }
+    .glasses{
+      display: none;
     }
     .brick-mor{
       /*
@@ -227,36 +234,48 @@ footer{
         display: block;
         }
       }
-
+  /*-- mobile --*/
   @media only screen and (max-width: 480px){
     .main-banner{
       height: 15rem;
     }
-    .new-arival{
+    .new-arrival{
       margin-top: 10rem;
-      height: 2rem;
+      width: auto;
+      height: 1rem;
     }
     .new-arrival h3{
       font-size: 0.77rem;
-      padding-top: 1rem auto 0 2rem;
+      padding: 1rem auto 0 2rem;
       font-weight: bold;
     }
     .new-arrival h1{
       font-size: 1rem;
       font-weight: bold;
     }
+    .products{
+      flex-direction: column;
+      align-items: center;
+    }
     .item{
       width: 90%;
       margin-bottom: 2rem;
     }
-    .products{
-      flex-direction: column;
-      align-items: center;
-
+    .glasses{
+      display: flex;
     }
     .brick-mor{
       flex-direction: column;
       justify-content: center;
       align-items: center;
+    }
+    .store-info{
+      width: 90%;
+    }
+    .location{
+      margin-bottom: 0.5rem;
+    }
+    .copy{
+      text-align: center;
     }
   }
