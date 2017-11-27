@@ -1,6 +1,8 @@
 
 html{
   font-size: 18px;
+  }
+body{
   font-family: Helvetica;
   color: white;
 }
@@ -50,7 +52,7 @@ div{
   margin-bottom: 4rem;
   padding: 2rem 3rem;
 }
-.new-arrival h1 h3{
+.new-arrival h1, h3{
   font-weight: bold;
 
 }
